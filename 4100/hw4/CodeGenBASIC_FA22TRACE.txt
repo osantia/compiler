@@ -1,0 +1,10 @@
+BASIC TEST File FA22
+String printout:  Hello World
+a is now 
+16
+Input a value of 25 for a: 
+After READLN, a is now 
+25
+All done.
+Execution termintated by program stop.
+

@@ -1,0 +1,270 @@
+ant -f D:\\JavaProj\\FA22Project5 -Dnb.internal.action.name=run run
+init:
+Deleting: D:\JavaProj\FA22Project5\build\built-jar.properties
+deps-jar:
+Updating property file: D:\JavaProj\FA22Project5\build\built-jar.properties
+Compiling 1 source file to D:\JavaProj\FA22Project5\build\classes
+compile:
+run:
+Parsing d:\\CodeGenBASIC_FA22.txt
+0001 {This file includes the basic WRITELN, READLN, and EXPRESSION tests.
+d:\\CodeGenBASIC_FA22
+0002 }
+0003 UNIT CodegenBASIC;
+	UNIT | 	0015 | 	UNIT
+--> Entering Program
+	IDNT | 	0050 | 	CodegenBASIC
+	SEMI | 	0036 | 	;
+0004 begin
+	BGIN | 	0011 | 	begin
+ --> Entering Block
+  --> Entering Blockbody
+0005 WRITELN("BASIC TEST File FA22");
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	BASIC TEST File FA22
+	RPAR | 	0035 | 	)
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0006 
+0007 WRITELN("String printout:  Hello World");
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	String printout:  Hello World
+	RPAR | 	0035 | 	)
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0008 
+0009 a := 2;
+	IDNT | 	0050 | 	a
+   --> Entering Statement
+    --> Entering handleAssignment
+     --> Entering Variable
+	ASGN | 	0037 | 	:=
+     <-- Exiting Variable
+	ICNS | 	0051 | 	2
+     --> Entering SimpleExpression
+      --> Entering Term
+       --> Entering Factor
+        --> Entering UnsignedConstant
+         --> Entering UnsignedNumber
+	SEMI | 	0036 | 	;
+         <-- Exiting UnsignedNumber
+        <-- Exiting UnsignedConstant
+       <-- Exiting Factor
+      <-- Exiting Term
+     <-- Exiting SimpleExpression
+    <-- Exiting handleAssignment
+   <-- Exiting Statement
+0010 b := 3;
+	IDNT | 	0050 | 	b
+   --> Entering Statement
+    --> Entering handleAssignment
+     --> Entering Variable
+	ASGN | 	0037 | 	:=
+     <-- Exiting Variable
+	ICNS | 	0051 | 	3
+     --> Entering SimpleExpression
+      --> Entering Term
+       --> Entering Factor
+        --> Entering UnsignedConstant
+         --> Entering UnsignedNumber
+	SEMI | 	0036 | 	;
+         <-- Exiting UnsignedNumber
+        <-- Exiting UnsignedConstant
+       <-- Exiting Factor
+      <-- Exiting Term
+     <-- Exiting SimpleExpression
+    <-- Exiting handleAssignment
+   <-- Exiting Statement
+0011 a := a *(3+b)+ a + 2*b/2 - 1;  {The result: 16}
+	IDNT | 	0050 | 	a
+   --> Entering Statement
+    --> Entering handleAssignment
+     --> Entering Variable
+	ASGN | 	0037 | 	:=
+     <-- Exiting Variable
+	IDNT | 	0050 | 	a
+     --> Entering SimpleExpression
+      --> Entering Term
+       --> Entering Factor
+        --> Entering Variable
+	MULT | 	0031 | 	*
+        <-- Exiting Variable
+       <-- Exiting Factor
+	LPAR | 	0034 | 	(
+       --> Entering Factor
+	ICNS | 	0051 | 	3
+        --> Entering SimpleExpression
+         --> Entering Term
+          --> Entering Factor
+           --> Entering UnsignedConstant
+            --> Entering UnsignedNumber
+	PLUS | 	0032 | 	+
+            <-- Exiting UnsignedNumber
+           <-- Exiting UnsignedConstant
+          <-- Exiting Factor
+         <-- Exiting Term
+	IDNT | 	0050 | 	b
+         --> Entering Term
+          --> Entering Factor
+           --> Entering Variable
+	RPAR | 	0035 | 	)
+           <-- Exiting Variable
+          <-- Exiting Factor
+         <-- Exiting Term
+        <-- Exiting SimpleExpression
+	PLUS | 	0032 | 	+
+       <-- Exiting Factor
+      <-- Exiting Term
+	IDNT | 	0050 | 	a
+      --> Entering Term
+       --> Entering Factor
+        --> Entering Variable
+	PLUS | 	0032 | 	+
+        <-- Exiting Variable
+       <-- Exiting Factor
+      <-- Exiting Term
+	ICNS | 	0051 | 	2
+      --> Entering Term
+       --> Entering Factor
+        --> Entering UnsignedConstant
+         --> Entering UnsignedNumber
+	MULT | 	0031 | 	*
+         <-- Exiting UnsignedNumber
+        <-- Exiting UnsignedConstant
+       <-- Exiting Factor
+	IDNT | 	0050 | 	b
+       --> Entering Factor
+        --> Entering Variable
+	DIVD | 	0030 | 	/
+        <-- Exiting Variable
+       <-- Exiting Factor
+	ICNS | 	0051 | 	2
+       --> Entering Factor
+        --> Entering UnsignedConstant
+         --> Entering UnsignedNumber
+	MINS | 	0033 | 	-
+         <-- Exiting UnsignedNumber
+        <-- Exiting UnsignedConstant
+       <-- Exiting Factor
+      <-- Exiting Term
+	ICNS | 	0051 | 	1
+      --> Entering Term
+       --> Entering Factor
+        --> Entering UnsignedConstant
+         --> Entering UnsignedNumber
+	SEMI | 	0036 | 	;
+         <-- Exiting UnsignedNumber
+        <-- Exiting UnsignedConstant
+       <-- Exiting Factor
+      <-- Exiting Term
+     <-- Exiting SimpleExpression
+    <-- Exiting handleAssignment
+   <-- Exiting Statement
+0012 WRITELN("a is now ");
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	a is now 
+	RPAR | 	0035 | 	)
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0013 WRITELN(a);
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	IDNT | 	0050 | 	a
+     --> Entering SimpleExpression
+      --> Entering Term
+       --> Entering Factor
+        --> Entering Variable
+	RPAR | 	0035 | 	)
+        <-- Exiting Variable
+       <-- Exiting Factor
+      <-- Exiting Term
+     <-- Exiting SimpleExpression
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0014 WRITELN("Input a value of 25 for a: ");
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	Input a value of 25 for a: 
+	RPAR | 	0035 | 	)
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0015 READLN(a);
+	READ | 	0010 | 	READLN
+   --> Entering Statement
+    --> Entering handleReadln
+	LPAR | 	0034 | 	(
+	IDNT | 	0050 | 	a
+     --> Entering Variable
+	RPAR | 	0035 | 	)
+     <-- Exiting Variable
+	SEMI | 	0036 | 	;
+    <-- Exiting handleReadln
+   <-- Exiting Statement
+0016 WRITELN("After READLN, a is now ");
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	After READLN, a is now 
+	RPAR | 	0035 | 	)
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0017 WRITELN(a);
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	IDNT | 	0050 | 	a
+     --> Entering SimpleExpression
+      --> Entering Term
+       --> Entering Factor
+        --> Entering Variable
+	RPAR | 	0035 | 	)
+        <-- Exiting Variable
+       <-- Exiting Factor
+      <-- Exiting Term
+     <-- Exiting SimpleExpression
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0018 WRITELN("All done.")
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	All done.
+	RPAR | 	0035 | 	)
+0019 end. 
+	END_ | 	0012 | 	end
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+	PERD | 	0048 | 	.
+  <-- Exiting Blockbody
+ <-- Exiting Block
+Success.
+<-- Exiting Program
+BASIC TEST File FA22
+String printout:  Hello World
+a is now 
+16
+Input a value of 25 for a: 
+>

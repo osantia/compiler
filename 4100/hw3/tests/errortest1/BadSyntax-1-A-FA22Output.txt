@@ -1,0 +1,151 @@
+ant -f D:\\JavaProj\\Project3_FA22 -Dnb.internal.action.name=run run
+init:
+Deleting: D:\JavaProj\Project3_FA22\build\built-jar.properties
+deps-jar:
+Updating property file: D:\JavaProj\Project3_FA22\build\built-jar.properties
+compile:
+run:
+Student Name, Last 4 of student number, CS4100/5100, FALL 2022
+INPUT FILE TO PROCESS IS: d:\BadSyntax-1-A-FA22.txt
+0001 
+0002 unit BadProg1;
+	UNIT | 	0015 | 	unit
+--> Entering Program
+	IDNT | 	0050 | 	BadProg1
+	SEMI | 	0036 | 	;
+0003 
+0004 (* This Part A test file should have one syntax error! *)
+0005 
+0006 begin
+	BGIN | 	0011 | 	begin
+ --> Entering Block
+0007 { The only statements for Part A are ASSIGNMENTS with EXPRESSIONS }
+0008 
+0009 sum:=(27*first)+ 3.14*radius*radius;
+	IDNT | 	0050 | 	sum
+  --> Entering Statement
+   --> Entering handleAssignment
+    --> Entering Variable
+	ASGN | 	0037 | 	:=
+    <-- Exiting Variable
+	LPAR | 	0034 | 	(
+    --> Entering SimpleExpression
+     --> Entering Term
+      --> Entering Factor
+	ICNS | 	0051 | 	27
+       --> Entering SimpleExpression
+        --> Entering Term
+         --> Entering Factor
+          --> Entering UnsignedConstant
+           --> Entering UnsignedNumber
+	MULT | 	0031 | 	*
+           <-- Exiting UnsignedNumber
+          <-- Exiting UnsignedConstant
+         <-- Exiting Factor
+         --> Entering Mulop
+	IDNT | 	0050 | 	first
+         <-- Exiting Mulop
+         --> Entering Factor
+          --> Entering Variable
+	RPAR | 	0035 | 	)
+          <-- Exiting Variable
+         <-- Exiting Factor
+        <-- Exiting Term
+       <-- Exiting SimpleExpression
+	PLUS | 	0032 | 	+
+      <-- Exiting Factor
+     <-- Exiting Term
+     --> Entering Addop
+	FCNS | 	0052 | 	3.14
+     <-- Exiting Addop
+     --> Entering Term
+      --> Entering Factor
+       --> Entering UnsignedConstant
+        --> Entering UnsignedNumber
+	MULT | 	0031 | 	*
+        <-- Exiting UnsignedNumber
+       <-- Exiting UnsignedConstant
+      <-- Exiting Factor
+      --> Entering Mulop
+	IDNT | 	0050 | 	radius
+      <-- Exiting Mulop
+      --> Entering Factor
+       --> Entering Variable
+	MULT | 	0031 | 	*
+       <-- Exiting Variable
+      <-- Exiting Factor
+      --> Entering Mulop
+	IDNT | 	0050 | 	radius
+      <-- Exiting Mulop
+      --> Entering Factor
+       --> Entering Variable
+	SEMI | 	0036 | 	;
+       <-- Exiting Variable
+      <-- Exiting Factor
+     <-- Exiting Term
+    <-- Exiting SimpleExpression
+   <-- Exiting handleAssignment
+  <-- Exiting Statement
+0010 
+0011 (* missing left paren below... where is it discovered? *)
+0012 a :=(a+c)*b-d)                ;
+	IDNT | 	0050 | 	a
+  --> Entering Statement
+   --> Entering handleAssignment
+    --> Entering Variable
+	ASGN | 	0037 | 	:=
+    <-- Exiting Variable
+	LPAR | 	0034 | 	(
+    --> Entering SimpleExpression
+     --> Entering Term
+      --> Entering Factor
+	IDNT | 	0050 | 	a
+       --> Entering SimpleExpression
+        --> Entering Term
+         --> Entering Factor
+          --> Entering Variable
+	PLUS | 	0032 | 	+
+          <-- Exiting Variable
+         <-- Exiting Factor
+        <-- Exiting Term
+        --> Entering Addop
+	IDNT | 	0050 | 	c
+        <-- Exiting Addop
+        --> Entering Term
+         --> Entering Factor
+          --> Entering Variable
+	RPAR | 	0035 | 	)
+          <-- Exiting Variable
+         <-- Exiting Factor
+        <-- Exiting Term
+       <-- Exiting SimpleExpression
+	MULT | 	0031 | 	*
+      <-- Exiting Factor
+      --> Entering Mulop
+	IDNT | 	0050 | 	b
+      <-- Exiting Mulop
+      --> Entering Factor
+       --> Entering Variable
+	MINS | 	0033 | 	-
+       <-- Exiting Variable
+      <-- Exiting Factor
+     <-- Exiting Term
+     --> Entering Addop
+	IDNT | 	0050 | 	d
+     <-- Exiting Addop
+     --> Entering Term
+      --> Entering Factor
+       --> Entering Variable
+	RPAR | 	0035 | 	)
+       <-- Exiting Variable
+      <-- Exiting Factor
+     <-- Exiting Term
+    <-- Exiting SimpleExpression
+   <-- Exiting handleAssignment
+  <-- Exiting Statement
+ERROR: Expected END but found )
+ <-- Exiting Block
+ERROR: Expected . but found )
+<-- Exiting Program
+Done.
+BUILD SUCCESSFUL (total time: 0 seconds)

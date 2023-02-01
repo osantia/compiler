@@ -1,0 +1,439 @@
+ant -f D:\\JavaProj\\FA22Project5 -Dnb.internal.action.name=run run
+init:
+Deleting: D:\JavaProj\FA22Project5\build\built-jar.properties
+deps-jar:
+Updating property file: D:\JavaProj\FA22Project5\build\built-jar.properties
+compile:
+run:
+Parsing d:\\CodeGenFULL-FA22.txt
+0001 UNIT Codegen;
+d:\\CodeGenFULL-FA22
+	UNIT | 	0015 | 	UNIT
+--> Entering Program
+	IDNT | 	0050 | 	Codegen
+	SEMI | 	0036 | 	;
+0002 begin
+	BGIN | 	0011 | 	begin
+ --> Entering Block
+  --> Entering Blockbody
+0003 WRITELN("Full FALL22 Test File");
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	Full FALL22 Test File
+	RPAR | 	0035 | 	)
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0004 
+0005 factorial := 1;
+	IDNT | 	0050 | 	factorial
+   --> Entering Statement
+    --> Entering handleAssignment
+     --> Entering Variable
+	ASGN | 	0037 | 	:=
+     <-- Exiting Variable
+	ICNS | 	0051 | 	1
+     --> Entering SimpleExpression
+      --> Entering Term
+       --> Entering Factor
+        --> Entering UnsignedConstant
+         --> Entering UnsignedNumber
+	SEMI | 	0036 | 	;
+         <-- Exiting UnsignedNumber
+        <-- Exiting UnsignedConstant
+       <-- Exiting Factor
+      <-- Exiting Term
+     <-- Exiting SimpleExpression
+    <-- Exiting handleAssignment
+   <-- Exiting Statement
+0006 WRITELN("Enter the value 5 for n:");
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	Enter the value 5 for n:
+	RPAR | 	0035 | 	)
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0007 readln(n);  {should be same result as doing n := 5;}
+	READ | 	0010 | 	readln
+   --> Entering Statement
+    --> Entering handleReadln
+	LPAR | 	0034 | 	(
+	IDNT | 	0050 | 	n
+     --> Entering Variable
+	RPAR | 	0035 | 	)
+     <-- Exiting Variable
+	SEMI | 	0036 | 	;
+    <-- Exiting handleReadln
+   <-- Exiting Statement
+0008 count := 1;
+	IDNT | 	0050 | 	count
+   --> Entering Statement
+    --> Entering handleAssignment
+     --> Entering Variable
+	ASGN | 	0037 | 	:=
+     <-- Exiting Variable
+	ICNS | 	0051 | 	1
+     --> Entering SimpleExpression
+      --> Entering Term
+       --> Entering Factor
+        --> Entering UnsignedConstant
+         --> Entering UnsignedNumber
+	SEMI | 	0036 | 	;
+         <-- Exiting UnsignedNumber
+        <-- Exiting UnsignedConstant
+       <-- Exiting Factor
+      <-- Exiting Term
+     <-- Exiting SimpleExpression
+    <-- Exiting handleAssignment
+   <-- Exiting Statement
+0009 dowhile count <= n
+	DOWL | 	0014 | 	dowhile
+   --> Entering Statement
+    --> Entering handleWhile
+	IDNT | 	0050 | 	count
+     --> Entering Relexpression
+      --> Entering SimpleExpression
+       --> Entering Term
+        --> Entering Factor
+         --> Entering Variable
+	LEEQ | 	0041 | 	<=
+         <-- Exiting Variable
+        <-- Exiting Factor
+       <-- Exiting Term
+      <-- Exiting SimpleExpression
+      --> Entering Relop
+	IDNT | 	0050 | 	n
+      <-- Exiting Relop
+      --> Entering SimpleExpression
+       --> Entering Term
+        --> Entering Factor
+         --> Entering Variable
+0010   begin
+	BGIN | 	0011 | 	begin
+         <-- Exiting Variable
+        <-- Exiting Factor
+       <-- Exiting Term
+      <-- Exiting SimpleExpression
+     <-- Exiting Relexpression
+     --> Entering Statement
+      --> Entering Blockbody
+0011   factorial := factorial*count;
+	IDNT | 	0050 | 	factorial
+       --> Entering Statement
+        --> Entering handleAssignment
+         --> Entering Variable
+	ASGN | 	0037 | 	:=
+         <-- Exiting Variable
+	IDNT | 	0050 | 	factorial
+         --> Entering SimpleExpression
+          --> Entering Term
+           --> Entering Factor
+            --> Entering Variable
+	MULT | 	0031 | 	*
+            <-- Exiting Variable
+           <-- Exiting Factor
+	IDNT | 	0050 | 	count
+           --> Entering Factor
+            --> Entering Variable
+	SEMI | 	0036 | 	;
+            <-- Exiting Variable
+           <-- Exiting Factor
+          <-- Exiting Term
+         <-- Exiting SimpleExpression
+        <-- Exiting handleAssignment
+       <-- Exiting Statement
+0012   count := count + 1
+	IDNT | 	0050 | 	count
+       --> Entering Statement
+        --> Entering handleAssignment
+         --> Entering Variable
+	ASGN | 	0037 | 	:=
+         <-- Exiting Variable
+	IDNT | 	0050 | 	count
+         --> Entering SimpleExpression
+          --> Entering Term
+           --> Entering Factor
+            --> Entering Variable
+	PLUS | 	0032 | 	+
+            <-- Exiting Variable
+           <-- Exiting Factor
+          <-- Exiting Term
+	ICNS | 	0051 | 	1
+          --> Entering Term
+           --> Entering Factor
+            --> Entering UnsignedConstant
+             --> Entering UnsignedNumber
+0013   end;
+	END_ | 	0012 | 	end
+             <-- Exiting UnsignedNumber
+            <-- Exiting UnsignedConstant
+           <-- Exiting Factor
+          <-- Exiting Term
+         <-- Exiting SimpleExpression
+        <-- Exiting handleAssignment
+       <-- Exiting Statement
+	SEMI | 	0036 | 	;
+      <-- Exiting Blockbody
+     <-- Exiting Statement
+    <-- Exiting handleWhile
+   <-- Exiting Statement
+0014 WRITELN("The calculation of 5! is:"); {Expected result is 120}
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	The calculation of 5! is:
+	RPAR | 	0035 | 	)
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0015 WRITELN(factorial);
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	IDNT | 	0050 | 	factorial
+     --> Entering SimpleExpression
+      --> Entering Term
+       --> Entering Factor
+        --> Entering Variable
+	RPAR | 	0035 | 	)
+        <-- Exiting Variable
+       <-- Exiting Factor
+      <-- Exiting Term
+     <-- Exiting SimpleExpression
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0016 WRITELN(" "); {blank line}
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	 
+	RPAR | 	0035 | 	)
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0017 
+0018 {count should be 6 at this point}
+0019 dowhile count > 1
+	DOWL | 	0014 | 	dowhile
+   --> Entering Statement
+    --> Entering handleWhile
+	IDNT | 	0050 | 	count
+     --> Entering Relexpression
+      --> Entering SimpleExpression
+       --> Entering Term
+        --> Entering Factor
+         --> Entering Variable
+	GRTR | 	0038 | 	>
+         <-- Exiting Variable
+        <-- Exiting Factor
+       <-- Exiting Term
+      <-- Exiting SimpleExpression
+      --> Entering Relop
+	ICNS | 	0051 | 	1
+      <-- Exiting Relop
+      --> Entering SimpleExpression
+       --> Entering Term
+        --> Entering Factor
+         --> Entering UnsignedConstant
+          --> Entering UnsignedNumber
+0020   begin
+	BGIN | 	0011 | 	begin
+          <-- Exiting UnsignedNumber
+         <-- Exiting UnsignedConstant
+        <-- Exiting Factor
+       <-- Exiting Term
+      <-- Exiting SimpleExpression
+     <-- Exiting Relexpression
+     --> Entering Statement
+      --> Entering Blockbody
+0021   WRITELN(count);
+	WRIT | 	0009 | 	WRITELN
+       --> Entering Statement
+        --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	IDNT | 	0050 | 	count
+         --> Entering SimpleExpression
+          --> Entering Term
+           --> Entering Factor
+            --> Entering Variable
+	RPAR | 	0035 | 	)
+            <-- Exiting Variable
+           <-- Exiting Factor
+          <-- Exiting Term
+         <-- Exiting SimpleExpression
+	SEMI | 	0036 | 	;
+        <-- Exiting handlePrintln
+       <-- Exiting Statement
+0022   if count - 2 > 2 then
+	_IF_ | 	0004 | 	if
+       --> Entering Statement
+        --> Entering handleIf
+	IDNT | 	0050 | 	count
+         --> Entering Relexpression
+          --> Entering SimpleExpression
+           --> Entering Term
+            --> Entering Factor
+             --> Entering Variable
+	MINS | 	0033 | 	-
+             <-- Exiting Variable
+            <-- Exiting Factor
+           <-- Exiting Term
+	ICNS | 	0051 | 	2
+           --> Entering Term
+            --> Entering Factor
+             --> Entering UnsignedConstant
+              --> Entering UnsignedNumber
+	GRTR | 	0038 | 	>
+              <-- Exiting UnsignedNumber
+             <-- Exiting UnsignedConstant
+            <-- Exiting Factor
+           <-- Exiting Term
+          <-- Exiting SimpleExpression
+          --> Entering Relop
+	ICNS | 	0051 | 	2
+          <-- Exiting Relop
+          --> Entering SimpleExpression
+           --> Entering Term
+            --> Entering Factor
+             --> Entering UnsignedConstant
+              --> Entering UnsignedNumber
+	THEN | 	0005 | 	then
+              <-- Exiting UnsignedNumber
+             <-- Exiting UnsignedConstant
+            <-- Exiting Factor
+           <-- Exiting Term
+          <-- Exiting SimpleExpression
+         <-- Exiting Relexpression
+0023     WRITELN("Count - 2 is greater than 2")
+	WRIT | 	0009 | 	WRITELN
+         --> Entering Statement
+          --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	Count - 2 is greater than 2
+	RPAR | 	0035 | 	)
+0024   else
+	ELSE | 	0006 | 	else
+          <-- Exiting handlePrintln
+         <-- Exiting Statement
+0025     WRITELN("Count - 2 is less than or equal to 2");
+	WRIT | 	0009 | 	WRITELN
+         --> Entering Statement
+          --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	Count - 2 is less than or equal to 2
+	RPAR | 	0035 | 	)
+	SEMI | 	0036 | 	;
+          <-- Exiting handlePrintln
+         <-- Exiting Statement
+        <-- Exiting handleIf
+       <-- Exiting Statement
+0026   count := count -1
+	IDNT | 	0050 | 	count
+       --> Entering Statement
+        --> Entering handleAssignment
+         --> Entering Variable
+	ASGN | 	0037 | 	:=
+         <-- Exiting Variable
+	IDNT | 	0050 | 	count
+         --> Entering SimpleExpression
+          --> Entering Term
+           --> Entering Factor
+            --> Entering Variable
+	MINS | 	0033 | 	-
+            <-- Exiting Variable
+           <-- Exiting Factor
+          <-- Exiting Term
+	ICNS | 	0051 | 	1
+          --> Entering Term
+           --> Entering Factor
+            --> Entering UnsignedConstant
+             --> Entering UnsignedNumber
+0027   end;
+	END_ | 	0012 | 	end
+             <-- Exiting UnsignedNumber
+            <-- Exiting UnsignedConstant
+           <-- Exiting Factor
+          <-- Exiting Term
+         <-- Exiting SimpleExpression
+        <-- Exiting handleAssignment
+       <-- Exiting Statement
+	SEMI | 	0036 | 	;
+      <-- Exiting Blockbody
+     <-- Exiting Statement
+    <-- Exiting handleWhile
+   <-- Exiting Statement
+0028 WRITELN("Count is: ");
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	Count is: 
+	RPAR | 	0035 | 	)
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0029 WRITELN(count);
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	IDNT | 	0050 | 	count
+     --> Entering SimpleExpression
+      --> Entering Term
+       --> Entering Factor
+        --> Entering Variable
+	RPAR | 	0035 | 	)
+        <-- Exiting Variable
+       <-- Exiting Factor
+      <-- Exiting Term
+     <-- Exiting SimpleExpression
+	SEMI | 	0036 | 	;
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+0030 WRITELN("All done.")
+	WRIT | 	0009 | 	WRITELN
+   --> Entering Statement
+    --> Entering handlePrintln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	All done.
+	RPAR | 	0035 | 	)
+0031 end. 
+	END_ | 	0012 | 	end
+    <-- Exiting handlePrintln
+   <-- Exiting Statement
+	PERD | 	0048 | 	.
+  <-- Exiting Blockbody
+ <-- Exiting Block
+Success.
+<-- Exiting Program
+Full FALL22 Test File
+Enter the value 5 for n:
+>5
+The calculation of 5! is:
+120
+ 
+6
+Count - 2 is greater than 2
+5
+Count - 2 is greater than 2
+4
+Count - 2 is less than or equal to 2
+3
+Count - 2 is less than or equal to 2
+2
+Count - 2 is less than or equal to 2
+Count is: 
+1
+All done.
+Execution terminated by program STOP.
+Done.
+BUILD SUCCESSFUL (total time: 5 seconds)
